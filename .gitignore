@@ -42,3 +42,31 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# ==========================================
+# AGREGADOS PARA MONOREPO Y NEXT.JS / NESTJS
+# ==========================================
+
+# 1. CORRECCIÓN DE RUTAS (Ignorar en cualquier subcarpeta)
+node_modules/
+dist/
+coverage/
+
+# 2. SEGURIDAD (¡CRÍTICO! Jamás subir credenciales o contraseñas)
+.env
+.env.*
+!.env.example
+*.pem
+
+# 3. NEXT.JS (Archivos autogenerados por tu Frontend)
+.next/
+out/
+build/
+.vercel/
+next-env.d.ts
+
+# 4. LOGS ADICIONALES
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
